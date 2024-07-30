@@ -1,8 +1,8 @@
 "use client";
-import SharedLayout from "@/components/shared/SharedLayout";
+import SharedLayoutFaqs from "@/components/shared/SharedLayoutFaqs";
 import React from "react";
 const FaqsLayout = ({ children }: React.PropsWithChildren) => {
-  return <SharedLayout>{children}</SharedLayout>;
+  return <SharedLayoutFaqs>{children}</SharedLayoutFaqs>;
 };
 
 export default FaqsLayout;

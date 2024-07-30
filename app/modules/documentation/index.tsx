@@ -42,7 +42,7 @@ const DocumentationPage = () => {
                 className="text-sm font-semibold flex items-center gap-2"
                 id="SyncVendors"
               >
-                <RefreshCw size={20} /> Sync Vendors
+                <RefreshCw size={16} /> Sync Vendors
               </h3>
 
               <p>
@@ -61,7 +61,7 @@ const DocumentationPage = () => {
                 className="text-sm font-semibold flex items-center gap-2"
                 id="SyncVendors"
               >
-                <RefreshCw size={20} /> Sync Departments
+                <RefreshCw size={16} /> Sync Departments
               </h3>
 
               <p>
@@ -80,7 +80,7 @@ const DocumentationPage = () => {
                 className="text-sm font-semibold flex items-center gap-2"
                 id="SyncVendors"
               >
-                <RefreshCw size={20} /> Sync Classifications
+                <RefreshCw size={16} /> Sync Classifications
               </h3>
 
               <p>

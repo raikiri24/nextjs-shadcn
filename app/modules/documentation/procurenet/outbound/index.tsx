@@ -40,9 +40,9 @@ const OutboundDocsPage = () => {
             <div className="flex flex-col gap-2">
               <h3
                 className="text-sm font-semibold flex items-center gap-2"
-                id="SyncVendors"
+                id="CreatePO"
               >
-                <RefreshCw size={20} /> Sync Vendors
+                <RefreshCw size={16} /> Create Purchase Order
               </h3>
 
               <p>
@@ -53,45 +53,7 @@ const OutboundDocsPage = () => {
               <h1 className="font-bold text-gray-600">Request Example</h1>
               <CodeBlock
                 language="bash"
-                value={`curl -X GET https://api.example.com/procurenet/inbound/vendor`}
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3
-                className="text-sm font-semibold flex items-center gap-2"
-                id="SyncVendors"
-              >
-                <RefreshCw size={20} /> Sync Departments
-              </h3>
-
-              <p>
-                Syncs departments data from NetSuite to a specified Google
-                Sheets document.
-              </p>
-
-              <h1 className="font-bold text-gray-600">Request Example</h1>
-              <CodeBlock
-                language="bash"
-                value={`curl -X GET https://api.example.com/procurenet/inbound/department`}
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3
-                className="text-sm font-semibold flex items-center gap-2"
-                id="SyncVendors"
-              >
-                <RefreshCw size={20} /> Sync Classifications
-              </h3>
-
-              <p>
-                Syncs classifications data from NetSuite to a specified Google
-                Sheets document.
-              </p>
-
-              <h1 className="font-bold text-gray-600">Request Example</h1>
-              <CodeBlock
-                language="bash"
-                value={`curl -X GET https://api.example.com/procurenet/inbound/classification`}
+                value={`curl -X POST https://api.example.com/procurenet/outbound`}
               />
             </div>
           </div>
@@ -112,23 +74,8 @@ const OutboundDocsPage = () => {
               </Link>
               <ul className=" list-disc ml-4 text-xs text-gray-600">
                 <li>
-                  <Link href="#SyncVendors" scroll={true}>
-                    <span className="font-semibold">Sync Vendors</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#SyncDepartments" scroll={true}>
-                    <span className="font-semibold">Sync Departments</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#SyncClassifications" scroll={true}>
-                    <span className="font-semibold">Sync Classifications</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#SyncItems" scroll={true}>
-                    <span className="font-semibold">Sync Items</span>
+                  <Link href="#CreatePO" scroll={true}>
+                    <span className="font-semibold">Create Purchase Order</span>
                   </Link>
                 </li>
               </ul>

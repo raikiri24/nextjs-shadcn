@@ -1,3 +1,3 @@
-import AddApplicationDocumentation from "@/app/modules/documentation/saas-management/add-application";
+import AddApplicationPage from "@/app/modules/documentation/saas-management/add-application";
 
-export default AddApplicationDocumentation;
+export default AddApplicationPage;

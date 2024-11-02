@@ -12,6 +12,6 @@
   },
   "aliases": {
     "components": "@/components",
-    "utils": "@/lib/utils/ggg"
+    "utils": "@/lib/utils"
   }
 }

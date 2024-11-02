@@ -12,6 +12,6 @@
   },
   "aliases": {
     "components": "@/components",
-    "utils": "@/lib/utils/gg"
+    "utils": "@/lib/utils/fromstaging"
   }
 }

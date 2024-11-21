@@ -1,5 +1,5 @@
 "use client";
 
-import FAQPage from "../modules/faqs";
+import DocumentationPage from "../modules/documentation";
 
-export default FAQPage;
+export default DocumentationPage;

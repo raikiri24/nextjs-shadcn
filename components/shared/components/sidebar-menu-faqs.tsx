@@ -46,7 +46,7 @@ const SidebarFaqs = ({ className }: { className: any }) => {
               }`}
               onClick={() => {
                 dispatch(setActiveKey("outbound"));
-                router.push("/documentation/procurenet/outbound");
+                router.push("/faqs/procurenet/outbound");
               }}
             >
               Outbound

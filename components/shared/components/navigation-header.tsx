@@ -1,12 +1,9 @@
 import React from "react";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
@@ -17,7 +14,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Moon, Sun } from "lucide-react";
+import { ExternalLink, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const NavigationHeader = () => {
@@ -29,7 +26,7 @@ const NavigationHeader = () => {
           <NavigationMenuItem>
             <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                UNITE
+                ProcureNet 2.0 | FAQs
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -42,17 +39,14 @@ const NavigationHeader = () => {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/faqs" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                FAQs
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
+
           <NavigationMenuItem>
             <Link href="/login" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Login
+                <div className="flex gap-2 justify-center items-center">
+                  <span>Go to ProcureNet </span>
+                  <ExternalLink width={15} />
+                </div>
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const sideNavDocumentationSlice = createSlice({
   name: "sidenav",
   initialState: {
-    activeKey: "inbound",
+    activeKey: "goods-services",
   },
 
   reducers: {
